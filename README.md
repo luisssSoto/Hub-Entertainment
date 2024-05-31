@@ -1,6 +1,6 @@
 # Playground 👦🏻👧🏻👶🏻
 
-![Logo of PlayGround]{https://github.com/luisssSoto/Hub-Entertainment/blob/main/images/PlayGroundLogo.png}
+![Logo of PlayGround](./images/play-ground.png)
 
 ## Description
 Welcome to Playground Entertainment which is a secure space to watch series, movies, cartoons and so on for our __kids__
