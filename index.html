@@ -4,56 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>home</title>
+    <!--Connection to Google Fonts API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Fonts Architect Daughter-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+     <!--Fonts Crafty Girls-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Crafty+Girls&display=swap" rel="stylesheet">
+    <!--Shortcut icon-->
+    <link rel="shortcut icon" href="images/play-ground.png">
+    <!--CSS reference-->
+    <link rel="stylesheet" href="./styles/home-style.css">
+    <!--JS reference-->
+    <script src="./scripts/home-script.js"></script>
 </head>
 <body>
     <header>
         <!--Main head-->
-        <h1 id="home">PlayGround</h1>
+        <h1 id="home" class="titles">PlayGround</h1>
     
-        <!--Navigation bar-->
-        <nav id="topNavigationBar">
-            <a href="#home">Home</a>
-            <a href="#continueWatching">Continuos Watching</a>
-            <a href="#watchingAgain">Watching again</a>
-            <a href="#favorites">Favorites</a>
-            <a href="#recomendations">Recomendatios</a>
+        <!--Top Navigation Bar-->
+        <nav class="navigation-bar">
+            <a class="paragraphs" href="#home">Home</a>
+            <a class="paragraphs" href="#continueWatching">Continue Watching</a>
+            <a class="paragraphs" href="#watchingAgain">Watching again</a>
+            <a class="paragraphs" href="#favorites">Favorites</a>
+            <a class="paragraphs" href="#recomendations">Recomendatios</a>
         </nav>
     </header>
-    <!--articles and then section-->
+    
     <article class="middleSpace">
         <!--Continue Watching Section-->
         <section id="continueWatching">
-            <dl>Continue Watching
-                <dt><img src="images/bluey.png" alt="bluey"></dt>
-            </dl>
+            <h2 class="sub-titles">Continue Watching</h2>
+            <ul>
+                <li class="card-box"><img onclick="goDetails()" class="video-cards" src="images/bluey.png" alt="bluey"></li>
+                <li class="card-box"><img class="video-cards" src="images/luca.webp" alt="luca"></li>
+                <li class="card-box"><img class="video-cards" src="images/winnie-pooh.jpg" alt="winnie-pooh"></li>
+                <li class="card-box"><img class="video-cards" src="images/gallina-pintadita.jpg" alt="gallina-pintadita"></li>
+                <li class="card-box"><img class="video-cards" src="images/gallina-pintadita.jpg" alt="gallina-pintadita"></li>
+                <li class="card-box"><img class="video-cards" src="images/gallina-pintadita.jpg" alt="gallina-pintadita"></li>
+            </ul>
         </section>
         <!--Watching Again Section-->
         <section id="watchingAgain">
-            <dl>Watching again
-                <dt><img src="images/paw-patrol.webp" alt="paw-patrol"></dt>
-            </dl>
+            <h2 class="sub-titles">Watching again</h2>
+            <ul>
+                <li class="card-box"><img src="images/paw-patrol.webp" alt="paw-patrol" class="video-cards"></li>
+                <li class="card-box"><img src="images/creature-cases.jpg" alt="creature-cases" class="video-cards"></li>
+                <li class="card-box"><img src="images/leo.png" alt="leo" class="video-cards"></li>
+                <li class="card-box"><img src="images/my-little-pony.jpg" alt="my-little-pony" class="video-cards"></li>
+            </ul>
         </section>
         <!--Favorites Section-->
         <section id="favorites">
-            <dl>Favorites
-                <dt><img src="images/storybots.webp" alt="storybots"></dt>
-            </dl>
+            <h2 class="sub-titles">Favorites</h2>
+            <ul>
+                <li class="card-box"><img src="images/storybots.webp" alt="storybots" class="video-cards"></li>
+                <li class="card-box"><img src="images/jose-comelon.jpg" alt="jose-comelon" class="video-cards"></li>
+                <li class="card-box"><img src="images/minions.jpg" alt="minions" class="video-cards"></li>
+                <li class="card-box"><img src="images/my-little-angel.jpg" alt="my-little-angel" class="video-cards"></li>
+            </ul>
         </section>
         <!--Recomendations Section -->
         <section id="recomendations">
-            <dl>Recomendations for you
-                <dt><img src="images/La-granja-de-Zenon.jpg" alt="La-granja-de-Zenon"></dt>
-            </dl>
+            <h2 class="sub-titles">Recomendations for you</h2>
+            <ul>
+                <li class="card-box"><img src="images/La-granja-de-Zenon.jpg" alt="La-granja-de-Zenon" class="video-cards"></li>
+                <li class="card-box"><img src="images/squarepants.jpg" alt="squarepants" class="video-cards"></li>
+                <li class="card-box"><img src="images/miraculous.jpg" alt="miraculous" class="video-cards"></li>
+                <li class="card-box"><img src="images/pocoyo.jpg" alt="pocoyo" class="video-cards"></li>
+            </ul>
         </section>
     </article>
-    <!--aside-->
-    <!--footer-->
+    
+    <aside>
+        <ul>
+            <li>element 1</li>
+            <li>element 2</li>
+            <li>element 3</li>
+        </ul>
+        <section id="salida"></section>
+    </aside>
+    
     <footer class="endSpace">
-        <nav id="bottomNavigationBar">
-            <a href="#home">Home</a>
-            <a href="#search.html">Search</a>
-            <a href="#settings.html">Settings</a>
+        <!--Bottom Navigation Bar-->
+        <nav class="navigation-bar">
+            <a class="paragraphs" href="#home">Home</a>
+            <a class="paragraphs" href="#search.html">Search</a>
+            <a class="paragraphs" href="#settings.html">Settings</a>
         </nav>
     </footer>
 </body>
