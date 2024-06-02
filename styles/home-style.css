@@ -1,0 +1,98 @@
+/*body*/
+body{
+  background-color: #6DC5D1;
+  background-image: url("../images/play-ground.png");
+  background-repeat: round;
+  background-size: 40%;
+  /* background-image: linear-gradient(#6DC5D1, #78dce9); */
+}
+
+/* main title */
+.titles{
+  font-family: "Architects Daughter", cursive;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 10em;
+  text-align: center;
+}
+
+/*top navigation bar*/
+.navigation-bar{
+  margin: 10px 300px 50px 300px;
+  padding: 20px;
+  background: linear-gradient(50deg, #6DC5D1 25%, #FDE49E 25% 50%, #FEB941 50% 75%, #DD761C 75% 100%);
+  border-radius: 20px;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: #282c2c;
+}
+nav a{
+  margin: 5px;
+  padding: 5px;
+}
+nav a:hover{
+  border-style: dotted;
+  border-radius: 20px;
+  background-color: #FEB941;
+}
+
+
+/*sub-titles*/
+.sub-titles {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4em;
+  text-align: center;
+}
+
+/*paragraphs font*/
+.paragraphs {
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 2em;
+  color: #282c2c;
+}
+
+/*carousel*/
+ul{
+  padding: 70px;
+  background-color: #FDE49E;
+  display: flex;
+  overflow: scroll;
+  position: relative;
+  border-radius: 20px;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: #282c2c;
+  background: linear-gradient(45deg, #6DC5D1 25%, #FDE49E 50%, #FEB941 75%, #DD761C 100%);
+}
+
+  /*box of items*/
+.card-box{
+  list-style-type: none;
+}
+
+/* items of carousel*/
+.video-cards{
+  width: 20px;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: #FEB941;
+  border-width: 10px;
+  object-fit: cover;
+  margin: 0 20px;
+  width: 300px;
+  height: 300px;
+}
+
+li img:hover{
+  border-style: dashed;
+  border-color: black;
+  width: 350px;
+}
+
+
+  
