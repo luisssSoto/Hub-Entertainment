@@ -16,14 +16,12 @@
     <link rel="shortcut icon" href="images/play-ground.png">
     <!--CSS reference-->
     <link rel="stylesheet" href="./styles/home-style.css">
-    <!--JS reference-->
-    <script src="./scripts/home-script.js"></script>
 </head>
 <body>
     <header>
         <!--Main head-->
         <h1 id="home" class="titles">PlayGround</h1>
-    
+        
         <!--Top Navigation Bar-->
         <nav class="navigation-bar">
             <a class="paragraphs" href="#home">Home</a>
@@ -39,12 +37,10 @@
         <section id="continueWatching">
             <h2 class="sub-titles">Continue Watching</h2>
             <ul>
-                <li class="card-box"><img onclick="goDetails()" class="video-cards" src="images/bluey.png" alt="bluey"></li>
-                <li class="card-box"><img class="video-cards" src="images/luca.webp" alt="luca"></li>
-                <li class="card-box"><img class="video-cards" src="images/winnie-pooh.jpg" alt="winnie-pooh"></li>
-                <li class="card-box"><img class="video-cards" src="images/gallina-pintadita.jpg" alt="gallina-pintadita"></li>
-                <li class="card-box"><img class="video-cards" src="images/gallina-pintadita.jpg" alt="gallina-pintadita"></li>
-                <li class="card-box"><img class="video-cards" src="images/gallina-pintadita.jpg" alt="gallina-pintadita"></li>
+                <li class="card-box"><img id="s-bluey" class="video-cards" src="images/bluey.png" alt="bluey"></li>
+                <li class="card-box"><img id="m-luca" class="video-cards" src="images/luca.webp" alt="luca"></li>
+                <li class="card-box"><img id="s-winnie-pooh" class="video-cards" src="images/winnie-pooh.jpg" alt="winnie-pooh"></li>
+                <li class="card-box"><img id="s-gallina-pintadita" class="video-cards" src="images/gallina-pintadita.jpg" alt="gallina-pintadita"></li>
             </ul>
         </section>
         <!--Watching Again Section-->
@@ -80,13 +76,10 @@
     </article>
     
     <aside>
-        <ul>
-            <li>element 1</li>
-            <li>element 2</li>
-            <li>element 3</li>
-        </ul>
-        <section id="salida"></section>
+        
     </aside>
+    <div id="exit"></div>
+    
     
     <footer class="endSpace">
         <!--Bottom Navigation Bar-->
@@ -96,5 +89,7 @@
             <a class="paragraphs" href="#settings.html">Settings</a>
         </nav>
     </footer>
+    <!--JS reference-->
+    <script src="scripts/home-script.js"></script>
 </body>
 </html>

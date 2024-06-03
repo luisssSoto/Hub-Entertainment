@@ -4,7 +4,6 @@ body{
   background-image: url("../images/play-ground.png");
   background-repeat: round;
   background-size: 40%;
-  /* background-image: linear-gradient(#6DC5D1, #78dce9); */
 }
 
 /* main title */
@@ -16,7 +15,7 @@ body{
   text-align: center;
 }
 
-/*top navigation bar*/
+/*navigation bar*/
 .navigation-bar{
   margin: 10px 300px 50px 300px;
   padding: 20px;

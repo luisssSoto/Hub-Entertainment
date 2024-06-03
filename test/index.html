@@ -3,25 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrusel de Imágenes</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Movie List</title>
+    <style>
+        .movie-container {
+            text-align: center;
+            margin: 20px auto;
+            width: 300px; /* Ajusta según el tamaño de tu imagen */
+        }
+
+        .movie-image {
+            width: 100%;
+            display: block;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .movie-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .movie-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <div class="carousel">
-        <ul class="carousel-inner">
-            <li class="carousel-item active">
-                <img src="../images/bluey.png" alt="Imagen 1">
-            </li>
-            <li class="carousel-item">
-                <img src="../images/creature-cases.jpg" alt="Imagen 2">
-            </li>
-            <li class="carousel-item">
-                <img src="../images/gallina-pintadita.jpg" alt="Imagen 3">
-            </li>
-        </ul>
-        <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
-        <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+    <h1>Select a Movie</h1>
+    <div class="movie-container">
+        <img src="../images/bluey.png" alt="Movie Image" class="movie-image">
+        <div class="button-container">
+            <button id="button1" class="movie-button" data-id="1">Movie 1</button>
+            <button id="button2" class="movie-button" data-id="2">Movie 2</button>
+            <button id="button3" class="movie-button" data-id="3">Movie 3</button>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
