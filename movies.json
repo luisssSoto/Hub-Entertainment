@@ -1,0 +1,8 @@
+{
+    "data":
+    [
+        { "id": "m-luca", "title": "LUCA", "resource": "images/luca.webp", "description": "Luca is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato, pasta and endless scooter rides."},
+        {"id": "m-leo", "title": "LEO", "resource": "images/leo.png", "description": "Adam Sandler is a lizard named Leo in this coming-of-age musical comedy about the last year of elementary school as seen through the eyes of a class pet."},
+        {"id": "m-my-little-pony", "title": "MY LITTLE PONY", "resource": "images/my-little-pony.jpg", "description": "When the evil Storm King threatens the Ponyville residents, the courageous Mane 6 ponies journey beyond the borders of Equestria to save their home."}
+    ]
+}
