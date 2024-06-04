@@ -1,0 +1,8 @@
+{
+    "data":
+    [
+        {"id": "s-bluey", "title": "BLUEY", "resource": "images/bluey.png", "description": "Bluey follows the adventures of a lovable and inexhaustible six-year-old Blue Heeler puppy who lives with her dad, mum and four-year-old little sister, Bingo."},
+        {"id": "s-winnie-pooh", "title": "WINNIE POOH", "resource": "images/winnie-pooh.jpg", "description": "Pooh is a good-natured, yellow-furred, honey-loving bear who lives in the Forest surrounding the Hundred Acre Wood"},
+        {"id": "s-gallina-pintadita", "title": "GALLINA PINTADITA", "resource": "images/gallina-pintadita.jpg", "description": "It's a music Brasilian serie, which is main target is the yougest kids of the house"}
+    ]
+}

@@ -6,28 +6,19 @@ function buildMovie(id, source, alternative){
     movieElement.setAttribute("src", source);
     movieElement.setAttribute("alt", alternative);
 
-    let buttonAddElement = document.createElement('button');
-    buttonAddElement.setAttribute("id", 'add-favorites');
-    buttonAddElement.textContent = 'Add';
-
-    let buttonHideElement = document.createElement('button');
-    buttonHideElement.setAttribute("id", 'hide-movie');
-    buttonHideElement.textContent = 'Hide';
-
-    let buttonWatchElement = document.createElement('button');
-    buttonWatchElement.setAttribute("id", 'watch-movie');
-    buttonWatchElement.textContent = 'Watch';
-
     let movieContainerElement = document.getElementById('movie-container');
     movieContainerElement.appendChild(movieElement);
 
-    let buttonContainerElement = document.createElement('div');
-    buttonContainerElement.setAttribute('id', 'button-container');
-    buttonContainerElement.appendChild(buttonAddElement);
-    buttonContainerElement.appendChild(buttonWatchElement);
-    buttonContainerElement.appendChild(buttonHideElement);
+    let addButtonElement = document.getElementById('add-favorites');
+    let watchButtonElement = document.getElementById('watch-movie');
+    let hideButtonElement = document.getElementById('hide-movie');
 
-    movieContainerElement.appendChild(buttonContainerElement);
+    movieContainerElement.appendChild(addButtonElement);
+    movieContainerElement.appendChild(watchButtonElement);
+    movieContainerElement.appendChild(hideButtonElement);
+};
+
+let favoriteSection = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -43,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         's-winnie-pooh': { title: "Winnie-Pooh", resource: "images/winnie-pooh.jpg",  description: " is a good-natured, yellow-furred, honey-loving bear who lives in the Forest surrounding the Hundred Acre Wood " },
         's-gallina-pintadita':{title: "Gallina-pintadita", resource: "images/gallina-pintadita.jpg", description: "It's a music Brasilian serie, which is main target is the yougest kids of the house"}
     };
+    console.log(`type of movieData: ${typeof movieData}`)
 
     let movie = movieData[movieId];
     if (movie) {
@@ -55,4 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         movieDescription.textContent = 'Movie not found!';
     }
+
+    let addButton = document.getElementById("add-favorites");
+    addButton.addEventListener('click', function (event) {
+        console.log('executing');
+        console.log(favoriteSection);
+        favoriteSection[movieId] = { movie };
+        alert(`Your movie ${event.target.title} was added to Favorites`);
+        console.log(favoriteSection);
+})
 });
