@@ -5,28 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>search Page</title>
+    <!--Fonts Architect Daughter-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+     <!--Fonts Crafty Girls-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Crafty+Girls&display=swap" rel="stylesheet">
+    <!--Shortcut icon-->
+    <link rel="shortcut icon" href="images/play-ground.png">
+    <!--CSS link-->
     <link rel="stylesheet" href="styles/search.css">
 </head>
 <body>
     <header>
-        <h1>Searching</h1>
+        <h2 class="sub-titles">Searching</h2>
         <br>
     </header>
     <article>
-        <section class="block">Choose one title:
-            <select name="" id="mySelector">
-                <option value="movies.json">Movies</option>
-                <option value="series.json">Series</option>
+        <section class="paragraphs" id="sub-title-choose">Choose one category:
+            <select name="" id="mySelector" class="paragraphs">
+                <option class="paragraphs" value="movies.json">Movies</option>
+                <option class="paragraphs" value="series.json">Series</option>
             </select>
         </section>
-        <section class="bloque">
+        <section class="paragraphs">
             <input type="text" id="myInput" placeholder="Search...">
             <button id="myButton">Search</button>
         </section>
-        <section class="myBlock">
+        <section class="paragraphs">
             <ul id="listOfTitles"></ul>
         </section>
     </article>
+    <footer class="endSpace">
+        <!--Bottom Navigation Bar-->
+        <nav class="navigation-bar">
+            <a class="paragraphs" href="/index.html">Home</a>
+            <a class="paragraphs" href="search.html">Search</a>
+            <a class="paragraphs" href="#settings.html">Settings</a>
+        </nav>
+    </footer>
     <script src="scripts/search.js"></script>
 </body>
 </html>

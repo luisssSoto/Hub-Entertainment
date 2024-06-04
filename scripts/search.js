@@ -47,6 +47,11 @@ function searchTitle(){
                 paragraphElement.innerHTML = item.description;
                 paragraphElement.style.display = "none";
 
+                let imageElement = document.createElement('img');
+                imageElement.src = item.resource;
+                imageElement.alt = item.title;
+                imageElement.setAttribute("class", "video-cards");
+
                 let listElement = document.createElement('li');
                 listElement.innerHTML = item.title;
                 listElement.addEventListener('mouseover', function(){
@@ -57,6 +62,7 @@ function searchTitle(){
                     let paragraphElement = document.getElementById(item.title);
                     paragraphElement.style.display = 'none';
             });
+            listElement.appendChild(imageElement);
             listElement.appendChild(paragraphElement);
             ulElement.appendChild(listElement);
         }
