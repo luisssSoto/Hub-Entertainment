@@ -13,9 +13,13 @@ function buildMovie(id, source, alternative){
     let watchButtonElement = document.getElementById('watch-movie');
     let hideButtonElement = document.getElementById('hide-movie');
 
-    movieContainerElement.appendChild(addButtonElement);
-    movieContainerElement.appendChild(watchButtonElement);
-    movieContainerElement.appendChild(hideButtonElement);
+    let buttonContainerElement = document.getElementById("button-container");
+
+    buttonContainerElement.appendChild(addButtonElement);
+    buttonContainerElement.appendChild(watchButtonElement);
+    buttonContainerElement.appendChild(hideButtonElement);
+
+    movieContainerElement.appendChild(buttonContainerElement);
 };
 
 let favoriteSection = {
@@ -34,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         's-winnie-pooh': { title: "Winnie-Pooh", resource: "images/winnie-pooh.jpg",  description: " is a good-natured, yellow-furred, honey-loving bear who lives in the Forest surrounding the Hundred Acre Wood " },
         's-gallina-pintadita':{title: "Gallina-pintadita", resource: "images/gallina-pintadita.jpg", description: "It's a music Brasilian serie, which is main target is the yougest kids of the house"}
     };
-    console.log(`type of movieData: ${typeof movieData}`)
 
     let movie = movieData[movieId];
     if (movie) {

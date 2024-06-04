@@ -1,0 +1,129 @@
+/*body*/
+
+body {
+    background-image: url("../images/play-ground.png");
+    background-repeat: round;
+    background-size: 40%;
+}
+
+/*sub-titles*/
+.sub-titles {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+}
+
+/*paragraphs font*/
+.paragraphs,
+button,
+input{
+    font-family: "Crafty Girls", cursive;
+    font-style: normal;
+    text-decoration: none;
+    color: #282c2c;
+}
+
+/*ids*/
+#sub-title-choose {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+select{
+    font-weight: 200;
+    font-size: .8em;
+}
+
+li{
+    font-weight: 200;
+    font-size: 1.5em;
+}
+
+
+input{
+    padding: 20px 300px;
+    margin: 20px 5px;
+    border-style: ridge;
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: black;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+button{
+    font-weight: 400;
+    font-size: 2em;
+}
+
+/* movie-container */
+#movie-container,
+#listOfTitles {
+    text-align: center;
+    margin: 20px 40%;
+    width: 400px;
+    list-style: none;
+}
+
+/*button-container*/
+#button-container {
+    margin-top: 10px;
+}
+
+/* button elements */
+button,
+select {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 40px;
+}
+
+button:hover,
+select:hover {
+    border-style: dashed;
+    border-radius: 40px;
+    background: linear-gradient(8deg, #6DC5D1 50%, #FDE49E 50% 100%, transparent);
+    size: 80px;
+}
+
+
+/* items of carousel*/
+.video-cards {
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #282c2c;
+    border-width: 8px;
+    object-fit: cover;
+
+}
+
+/*navigation bar*/
+.navigation-bar {
+    margin: 10px 300px 50px 300px;
+    padding: 20px;
+    background: linear-gradient(50deg, #6DC5D1 25%, #FDE49E 25% 50%, #FEB941 50% 75%, #DD761C 75% 100%);
+    border-radius: 20px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: #282c2c;
+}
+
+nav a {
+    margin: 5px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+nav a:hover {
+    border-style: dotted;
+    border-radius: 20px;
+    background-color: #FEB941;
+}
