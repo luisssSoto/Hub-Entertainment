@@ -9,6 +9,9 @@
         {"id": "s-storybots", "title": "STORYBOTS", "resource": "images/storybots.webp", "description": "five interesting creatures who live inside a computer are tasked with the job of answering a real kid's big question, such as \"What makes night happen?\" or \"Why is the sky blue?\" "},
         {"id": "s-jose-comelon", "title": "JOSE COMELON", "resource": "images/jose-comelon.jpg", "description": "José and his friends get in a magic trip of learning which is full of surprises, outside adventures ¡even space trips!"},
         {"id": "s-my-little-angel", "title": "MY LITTLE ANGEL", "resource": "images/my-little-angel.jpg", "description": "Join in the fun as Baby John and his friends learn how to share the playground, avoid cuts and bruises, express feelings and much more!"},
-        {"id": "s-la-granja-de-Zenon", "title": "LA GRANJA DE ZENON", "resource": "images/La-granja-de-Zenon.jpg", "description": "have a lot of fun with this incredible music cartoon, which learn about farming live and more"}
+        {"id": "s-la-granja-de-Zenon", "title": "LA GRANJA DE ZENON", "resource": "images/La-granja-de-Zenon.jpg", "description": "have a lot of fun with this incredible music cartoon, which learn about farming live and more"},
+        {"id": "s-sponge-bob-squarepants", "title": "SPONGE BOB SQUAREPANTS", "resource": "images/squarepants.jpg", "description": "SpongeBob SquarePants is an energetic and optimistic yellow sea sponge who lives in a submerged pineapple. SpongeBob has a childlike enthusiasm for life, which carries over to his job as a fry cook at a fast food restaurant called the Krusty Krab."},
+        {"id": "s-miraculous", "title": "MIRACULOUS", "resource": "images/miraculous.jpg", "description": "Marinette and Adrien, two normal teens, transform into the superheroes Ladybug and Cat Noir when a mysterious evil threatens to destroy Paris."},
+        {"id": "s-pocoyo", "title": "POCOYO", "resource": "images/pocoyo.jpg", "description": "Pocoyo is a 4-year-old kid who is full of curiosity and loves to play games and discover new things. He is very acrobatic and moves at a quick speed."}
     ]
 }
