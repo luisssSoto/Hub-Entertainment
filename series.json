@@ -3,6 +3,12 @@
     [
         {"id": "s-bluey", "title": "BLUEY", "resource": "images/bluey.png", "description": "Bluey follows the adventures of a lovable and inexhaustible six-year-old Blue Heeler puppy who lives with her dad, mum and four-year-old little sister, Bingo."},
         {"id": "s-winnie-pooh", "title": "WINNIE POOH", "resource": "images/winnie-pooh.jpg", "description": "Pooh is a good-natured, yellow-furred, honey-loving bear who lives in the Forest surrounding the Hundred Acre Wood"},
-        {"id": "s-gallina-pintadita", "title": "GALLINA PINTADITA", "resource": "images/gallina-pintadita.jpg", "description": "It's a music Brasilian serie, which is main target is the yougest kids of the house"}
+        {"id": "s-gallina-pintadita", "title": "GALLINA PINTADITA", "resource": "images/gallina-pintadita.jpg", "description": "It's a music Brasilian serie, which is main target is the yougest kids of the house"},
+        {"id": "s-paw-patrol", "title": "PAW PATROL", "resource": "images/paw-patrol.webp", "description": "Led by a boy named Ryder, a team of six playful rescue dogs use their individual talents to protect the seaside town of Adventure Bay"},
+        {"id": "s-the-creature-cases", "title": "THE CREATURE CASES", "resource": "images/creature-cases.jpg", "description": "Lead by Director Scratch, special agents Sam and Kit travel across the globe to solve animal mysteries."},
+        {"id": "s-storybots", "title": "STORYBOTS", "resource": "images/storybots.webp", "description": "five interesting creatures who live inside a computer are tasked with the job of answering a real kid's big question, such as \"What makes night happen?\" or \"Why is the sky blue?\" "},
+        {"id": "s-jose-comelon", "title": "JOSE COMELON", "resource": "images/jose-comelon.jpg", "description": "José and his friends get in a magic trip of learning which is full of surprises, outside adventures ¡even space trips!"},
+        {"id": "s-my-little-angel", "title": "MY LITTLE ANGEL", "resource": "images/my-little-angel.jpg", "description": "Join in the fun as Baby John and his friends learn how to share the playground, avoid cuts and bruises, express feelings and much more!"},
+        {"id": "s-la-granja-de-Zenon", "title": "LA GRANJA DE ZENON", "resource": "images/La-granja-de-Zenon.jpg", "description": "have a lot of fun with this incredible music cartoon, which learn about farming live and more"}
     ]
 }
