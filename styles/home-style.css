@@ -93,5 +93,14 @@ li img:hover{
   width: 350px;
 }
 
+.fade{
+  transition: opacity 0.5s;
+}
+
+.hidden{  
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
 
   
