@@ -10,6 +10,11 @@ Welcome to Playground Entertainment which is a secure space to watch series, mov
 * Parental control in order to check what videos their children can watch
 * And more
 
+## Technologies envolved
+* HTML
+* CSS
+* JavaScript
+
 ## Screenshot
 ...as evidence how the proyect is running
 
@@ -20,10 +25,12 @@ Running this app is pretty fast, only follow the steps below:
 - [ ] Enjoy it
 
 ## How it works...
-This proyect was made with a well-known technologies such as HTML, CSS and JavaScript in order to start with the first sprint
+1. I did a mockup in figma: https://www.figma.com/design/NSQFoxWQjEVp1BBeCn6n6c/Untitled?node-id=0-1&t=JXQyVJuvXVWb6Q9S-0 
+2. 
+
 
 ## Well-known problems
-In this point any problems have appeared but, it doesn't mean there won't be any of them, so... as soon I find a problem I'm going to add it just here
+Security 'cause of the login is not safety at all
 
 ## Retrospective
 Keeping track in my proyect is neccesary before start writing this section so I'm working on it 🦾
