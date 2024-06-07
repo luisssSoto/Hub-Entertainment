@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <!--Fonts Architect Daughter-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+     <!--Fonts Crafty Girls-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Crafty+Girls&display=swap" rel="stylesheet">
+    <!--Shortcut icon-->
+    <link rel="shortcut icon" href="images/play-ground.png">
+    <!--CSS reference-->
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <h1 id="login" class="titles">PlayGround</h1>
+
+    <form action="/index.html" method="GET">
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="@email.com" required="required">
+        </p>
+        <p>
+            <label for="pass">Password</label>
+            <input type="password" name="passwd" id="pass" 
+            placeholder="qwe1234" 
+            pattern="[a-z]{3}[0-9]{4}" 
+            required="required">
+        </p>
+        <p><a href="/index.html"><input type="submit" value="Enviar"></a></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/*body*/
+body {
+    background-color: #6DC5D1;
+    background-image: url("../images/play-ground.png");
+    background-repeat: round;
+    background-size: 40%;
+}
+
+/* main title */
+.titles {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 10em;
+    text-align: center;
+}
+
+/*paragraphs font*/
+p{
+    font-family: "Crafty Girls", cursive;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2em;
+    color: #282c2c;
+    text-align: center;
+}
+
+input{
+    padding: 10px 200px;
+    margin: 20px 5px;
+    border-style: ridge;
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: black;
+
+    font-family: "Crafty Girls", cursive;
+    font-weight: 200;
+    font-size: .8em;
+    color: #282c2c;
+    text-align: center;
+}
+
+input:hover{
+    cursor: pointer;
+    border-style: dashed;
+    border-radius: 40px;
+    background: linear-gradient(8deg, #6DC5D1 50%, #FDE49E 50% 100%, transparent);
+    size: 80px;
+}
