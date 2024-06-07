@@ -17,7 +17,8 @@ function getFavoriteMovies() {
 }
 
 //Show the list of Favorite Section
-function displayFavoriteMovies() {
+function displayAllMovies() {
+    //display favorite section
     let favoritesMovieList = document.getElementById('favorites-list'); //ul
     favoritesMovieList.innerHTML = '';
     let favoriteMovies = getFavoriteMovies();
@@ -35,22 +36,11 @@ function displayFavoriteMovies() {
         containerImgMovieElement.appendChild(imgMovieElement);
         favoritesMovieList.appendChild(containerImgMovieElement);
 
-        imgMovieElement.addEventListener('click', function(){
+        imgMovieElement.addEventListener('click', function () {
             let movieId = this.getAttribute('id');
             window.location.href = 'details.html?id=' + movieId;
         });
-    })
-
-    // favoriteMovies.forEach((movie, index) => {
-    //     const movieItem = document.createElement('li');
-    //     movieItem.textContent = `${movie.title} (Director: ${movie.director}, Año: ${movie.year}) `;
-
-    //     const removeButton = document.createElement('button');
-    //     removeButton.textContent = 'Eliminar';
-    //     removeButton.onclick = () => removeMovie(index);
-
-    //     movieItem.appendChild(removeButton);
-    // });
+    });
 }
 
-window.onload = displayFavoriteMovies;
+window.onload = displayAllMovies;

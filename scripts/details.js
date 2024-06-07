@@ -5,16 +5,32 @@ function getFavoriteMovies() {
     return movies ? JSON.parse(movies) : [];
 };
 
+//function to get the "Continue Watching" section
+function getContinueWatchingMovies(){
+    let movies = localStorage.getItem('continueWatching');
+    return movies ? JSON.parse(movies) : [];
+}
+
 // function to save the list of movies to localStorage
 function saveFavoriteMovies(movies) {
     //object JS -> JSON
     localStorage.setItem('favoriteMovies', JSON.stringify(movies));
 };
 
+//function to save data of the "Continue Watching" section
+function saveContinueWatchingMovies(movies){
+    localStorage.setItem('continueWatching', JSON.stringify(movies));
+}
+
+function addingMovies(id, title, resource, description) {
+    let newTitle = { "id": id, "title": title, "resource": resource, "description": description };
+    console.log('new title is: ' + newTitle);
+}
+
 //create all the content related to the movie/serie according the parameters have gotten
-function buildMovie(id, source, alternative, description) {
+function buildMovie(id, title, resource, description) {
     let titleElement = document.getElementById('title-movie');
-    titleElement.textContent = alternative;
+    titleElement.textContent = title;
 
     let descriptionElement = document.getElementById('description-movie');
     descriptionElement.textContent = description
@@ -22,8 +38,8 @@ function buildMovie(id, source, alternative, description) {
     let imgElement = document.createElement('img');
     imgElement.setAttribute("class", "video-cards");
     imgElement.setAttribute("id", id);
-    imgElement.setAttribute("src", source);
-    imgElement.setAttribute("alt", alternative);
+    imgElement.setAttribute("src", resource);
+    imgElement.setAttribute("alt", title);
 
     let movieContainerElement = document.getElementById('movie-container');
     movieContainerElement.appendChild(imgElement);
@@ -39,8 +55,36 @@ function buildMovie(id, source, alternative, description) {
     buttonContainerElement.appendChild(hideButtonElement);
 
     movieContainerElement.appendChild(buttonContainerElement);
-};
 
+    // Adding a new title to the Favorite Section
+    let newTitle = { "id": id, "title": title, "resource": resource, "description": description };
+    
+    addButtonElement.addEventListener('click', function () {
+        let favoriteMovies = getFavoriteMovies();
+
+        let isInFavoriteSection = favoriteMovies.some(title =>
+            title.id === newTitle.id);
+        if(!isInFavoriteSection){
+            favoriteMovies.push(newTitle);
+            saveFavoriteMovies(favoriteMovies);
+            alert('Awesome! this movie is now just in your "Favorites" section')
+        }
+        else{
+            alert('Wow! it seems you\'ve already have this title in your "Favorites" section');
+        }
+    })
+
+    // Hidding a title from the favorite section
+    hideButtonElement.addEventListener('click', function(){
+        let decision = confirm('If you decide to hide this title won\'t be in the "Favorites" section, only it will be if you directly searh it... Do you want to continue?')
+        if (decision){
+            console.log('made decision'); 
+            let favoriteMovies = getFavoriteMovies();
+            favoriteMovies = favoriteMovies.filter(movie => movie.id != newTitle.id)
+            saveFavoriteMovies(favoriteMovies);
+        }
+    })
+}
 
 //consume data from .json file according to the category
 function loadingDetails() {
@@ -59,48 +103,15 @@ function loadingDetails() {
 
     console.log('Category: ' + category);
 
-    let addButtonElement = document.getElementById('add-favorites');
-    let hideButtonElement = document.getElementById('hide-movie');
-
     fetch(category).then(response => response.json()).then(function (output) {
         for (let item of output.data) {
             if (movieId == item.id) {
-                buildMovie(item.id, item.resource, item.title, item.description);
-
-                // adding a movie to favorite section
-                addButtonElement.addEventListener('click', function () {
-                    let newTitle = { "id": item.id, "title": item.title, "resource": item.resource, "description": item.description };
-                    let favoriteMovies = getFavoriteMovies();
-                    favoriteMovies.push(newTitle);
-                    saveFavoriteMovies(favoriteMovies);
-                    alert(`Your choice was saved in Favorites sections successfully`);
-                });
-                                
-                //hide a movie of all the main menu (home)
-                hideButtonElement.addEventListener('click', function(){
-                    console.log('hidding...');
-                    let categoryList = category;
-                    console.log('output ' + output);
-                    console.log('data ' + output.data);
-                    console.log('item' + item);
-                    console.log(item.id);
-                    let favoriteMovies = getFavoriteMovies();
-                    for (const key in object) {
-                        if (Object.hasOwnProperty.call(object, key)) {
-                            const element = object[key];
-                            
-                        }
-                    }
-                    favoriteMovies.splice(index, 1);
-                    saveFavoriteMovies(favoriteMovies);
-                    displayFavoriteMovies();
-                    // saveFavoriteMovies(favoriteMovies);
-                    
-                });
-                // console.log('This is the index I\'ve been looking forward:' + data.indexOf(item.id));
+                buildMovie(item.id, item.title, item.resource, item.description);
             }
         }
     }).catch(function (error) {
         console.log('error: ', error);
     })
 };
+
+let run = loadingDetails();
